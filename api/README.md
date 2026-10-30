@@ -17,6 +17,7 @@ employee TODO list data and export it to different data structures.
 | ---- | ----------- |
 | `0-gather_data_from_an_API.py` | Display an employee's TODO list progress for a given employee ID |
 | `1-export_to_CSV.py` | Export all tasks of an employee to `USER_ID.csv` |
+| `2-export_to_JSON.py` | Export all tasks of an employee to `USER_ID.json` |
 
 ## Usage
 
@@ -30,4 +31,8 @@ $ python3 1-export_to_CSV.py 2
 $ head -n 2 2.csv
 "2","Antonette","False","suscipit repellat esse quibusdam voluptatem incidunt"
 "2","Antonette","True","distinctio vitae autem nihil ut molestias quo"
+
+$ python3 2-export_to_JSON.py 2
+$ cat 2.json
+{"2": [{"task": "suscipit repellat esse quibusdam voluptatem incidunt", "completed": false, "username": "Antonette"}, ...]}
 ```
